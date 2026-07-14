@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"tez_vldiscovery\startup_stm32f100xb.o"
+"tez_vldiscovery\main.o"
+"tez_vldiscovery\stm32f1xx_it.o"
+"tez_vldiscovery\stm32f1xx_hal_msp.o"
+"tez_vldiscovery\stm32f1xx_hal_gpio_ex.o"
+"tez_vldiscovery\stm32f1xx_hal_adc.o"
+"tez_vldiscovery\stm32f1xx_hal_adc_ex.o"
+"tez_vldiscovery\stm32f1xx_hal.o"
+"tez_vldiscovery\stm32f1xx_hal_rcc.o"
+"tez_vldiscovery\stm32f1xx_hal_rcc_ex.o"
+"tez_vldiscovery\stm32f1xx_hal_gpio.o"
+"tez_vldiscovery\stm32f1xx_hal_dma.o"
+"tez_vldiscovery\stm32f1xx_hal_cortex.o"
+"tez_vldiscovery\stm32f1xx_hal_pwr.o"
+"tez_vldiscovery\stm32f1xx_hal_flash.o"
+"tez_vldiscovery\stm32f1xx_hal_flash_ex.o"
+"tez_vldiscovery\stm32f1xx_hal_exti.o"
+"tez_vldiscovery\stm32f1xx_hal_tim.o"
+"tez_vldiscovery\stm32f1xx_hal_tim_ex.o"
+"tez_vldiscovery\stm32f1xx_hal_uart.o"
+"tez_vldiscovery\system_stm32f1xx.o"
+--strict --scatter "TEZ_VLDISCOVERY\TEZ_VLDISCOVERY.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEZ_VLDISCOVERY.map" -o TEZ_VLDISCOVERY\TEZ_VLDISCOVERY.axf
